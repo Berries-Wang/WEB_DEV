@@ -208,24 +208,15 @@ console.log(hash); // 输出:74bf8d08825a11bdcc41ab7907affc3772238152fbbb3e8d48c
   + 由代码可知，require方法会去调用Module._load方法
 4. Module._load方法
 + Module._load方法&&之后的方法请参见: [node学习](https://gitee.com/WeiLU/node)
-## 命令: node index.js 是如何运行起来的
-
-## [require && import区别](https://www.zhihu.com/question/56820346)
-
+  
 ## C/C++ 扩展模块的开发以及应用场景
-
 ### 优势
-
 1. 可以将部分内容交由C++去处理，充分利用计算机的处理速度。因为js是单线程的，这会导致在面对CPU密集型的应用无能为例
-
 2. 对于内存消耗较大的应用可以交由C++去处理。因为V8是为浏览器设计的，内存方面右严格的限制。
 
 ### 如何开发呢
-
 #### 目的
-
 1. 通过调用C++代码来实现如下代码功能:module.exports.hello = () => 'world';
-
 ##### 步骤
 
 1. 建立文件夹wang-hello(名字随便，路径随便)，本次在node_modules下建立的
